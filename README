@@ -1,0 +1,11 @@
+Django Snippets for Gedit, converted from TextMate Snippets to Gedit.
+
+INSTALL
+
+* Open gedit
+* Install and activate the snippets plugin [1] (if you didn’t before)
+* Go to Tools -> Manage snippets
+* Click on the import button and select the file django.xml and django-template.xml
+* Now you should see the new Django snippets
+ 
+[1] http://live.gnome.org/Gedit/Plugins/Snippets
