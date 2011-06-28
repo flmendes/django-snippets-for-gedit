@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="python">
+  <snippet>
+    <tag>ffile</tag>
+    <description>FileField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.FileField(upload_to=${1:/path/for/upload})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fphonenumber</tag>
+    <description>PhoneNumberField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.PhoneNumberField(${2:blank=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fnullbool</tag>
+    <description>NullBooleanField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.NullBooleanField(${2:default=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fsmallint</tag>
+    <description>SmallIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.SmallIntegerField(${2:blank=True, null=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fdecimal</tag>
+    <description>DecimalField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.DecimalField(max_digits=$2, decimal_places=$3)]]></text>
+  </snippet>
+  <snippet>
+    <tag>ftext</tag>
+    <description>TextField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.TextField(${2:blank=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fsendmail</tag>
+    <description>send_mail</description>
+    <text><![CDATA[mail.send_mail("${1:Subject}", "${2:Message}", "${3:from@example.com}", ${4:["to@example.com"]}${5:, fail_silently=True})
+]]></text>
+  </snippet>
+  <snippet>
+    <tag>finteger</tag>
+    <description>IntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.IntegerField(${2:blank=True, null=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fipaddress</tag>
+    <description>IPAddressField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.IPAddressField(${2:blank=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fpossmall</tag>
+    <description>PositiveSmallIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.PositiveSmallIntegerField(${2:blank=True, null=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fposint</tag>
+    <description>PositiveIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.PositiveIntegerField(${2:blank=True, null=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fcomaseparatedinteger</tag>
+    <description>CommaSeparatedIntegerField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.CommaSeparatedIntegerField(max_length=$2)]]></text>
+  </snippet>
+  <snippet>
+    <tag>fchar</tag>
+    <description>CharField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.CharField(${2:blank=True}, max_length=${3:100})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fxml</tag>
+    <description>XMLField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.XMLField(schema_path=${2:/path/to/RelaxNG}${3:, blank=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fmanytomany</tag>
+    <description>ManyToManyField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.ManyToManyField(${2:RELATED_MODEL})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fimage</tag>
+    <description>ImageField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.ImageField(upload_to="${2:/dir/path}"${3:, height_field=$4}${5:, width_field=$6})]]></text>
+  </snippet>
+  <snippet>
+    <tag>ffloat</tag>
+    <description>FloatField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.FloatField()]]></text>
+  </snippet>
+  <snippet>
+    <tag>fdatetime</tag>
+    <description>DateTimeField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.DateTimeField(${2:blank=True}${3:, default=datetime.datetime.now})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fslug</tag>
+    <description>SlugField</description>
+    <text><![CDATA[${1:slug} = forms.SlugField(${2:prepopulate_from=("$3",$4)})]]></text>
+  </snippet>
+  <snippet>
+    <tag>furl</tag>
+    <description>URLField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.URLField(${2:blank=True}, verify_exists=${3:True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>femail</tag>
+    <description>EmailField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.EmailField()]]></text>
+  </snippet>
+  <snippet>
+    <tag>fboolean</tag>
+    <description>BooleanField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.BooleanField(${2:default=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>ffk</tag>
+    <description>ForeignKey</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.ForeignKey(${2:RELATED_MODEL})]]></text>
+  </snippet>
+  <snippet>
+    <tag>ftime</tag>
+    <description>TimeField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.TimeField(${2:blank=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>form</tag>
+    <description>Form Skeleton</description>
+    <text><![CDATA[class ${1:Formname}(forms.ModelForm):
+	"""${2:($1 description)}"""
+	$0
+
+	class Admin:
+		list_display = ('',)
+		search_fields = ('',)
+
+	def __unicode__(self):
+		return u"$1"
+]]></text>
+  </snippet>
+  <snippet>
+    <tag>ffilepath</tag>
+    <description>FilePathField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.FilePathField(path="${1:/location/of/choices}"${2:, match="${3:regex}"}${4:, recursive=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fusstate</tag>
+    <description>USStateField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.USStateField(${2:blank=True})]]></text>
+  </snippet>
+  <snippet>
+    <tag>fauto</tag>
+    <description>AutoField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.AutoField()]]></text>
+  </snippet>
+  <snippet>
+    <tag>fdate</tag>
+    <description>DateField</description>
+    <text><![CDATA[${1:FIELDNAME} = forms.DateField(${2:default=datetime.datetime.today})]]></text>
+  </snippet>
+</snippets>
