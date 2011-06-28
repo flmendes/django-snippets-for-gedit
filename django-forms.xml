@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<snippets language="Django Forms">
+<snippets language="python">
   <snippet>
     <tag>ffile</tag>
     <description>FileField</description>
@@ -29,12 +29,6 @@
     <tag>ftext</tag>
     <description>TextField</description>
     <text><![CDATA[${1:FIELDNAME} = forms.TextField(${2:blank=True})]]></text>
-  </snippet>
-  <snippet>
-    <tag>fsendmail</tag>
-    <description>send_mail</description>
-    <text><![CDATA[mail.send_mail("${1:Subject}", "${2:Message}", "${3:from@example.com}", ${4:["to@example.com"]}${5:, fail_silently=True})
-]]></text>
   </snippet>
   <snippet>
     <tag>finteger</tag>
