@@ -1,150 +1,150 @@
 <?xml version='1.0' encoding='utf-8'?>
 <snippets language="html">
-  <snippet>
-    <tag></tag>
+  <snippet id="dcomment">
+    <tag>dcomment</tag>
     <description>comment</description>
     <text><![CDATA[{% comment %}
 	$1
 {% endcomment %}]]></text>
   </snippet>
-  <snippet>
-    <tag></tag>
+  <snippet id="doblock">
+    <tag>doblock</tag>
     <description>templatetag: openblock</description>
     <text><![CDATA[{% templatetag openblock %}]]></text>
   </snippet>
-  <snippet>
-    <tag>load</tag>
+  <snippet id="dload">
+    <tag>dload</tag>
     <description>load</description>
     <text><![CDATA[{% load $1 %}]]></text>
   </snippet>
-  <snippet>
-    <tag>now</tag>
+  <snippet id="now">
+    <tag>dnow</tag>
     <description>now</description>
     <text><![CDATA[{% now "$1" %}]]></text>
   </snippet>
-  <snippet>
-    <tag>regroup</tag>
+  <snippet id="dregroup">
+    <tag>dregroup</tag>
     <description>regroup</description>
     <text><![CDATA[{% regroup $1 by $2 as $3 %}]]></text>
   </snippet>
-  <snippet>
-    <tag>for</tag>
+  <snippet id="dfor">
+    <tag>dfor</tag>
     <description>for</description>
     <text><![CDATA[{% for $1 in $2 %}
 	$3
 {% endfor %}]]></text>
   </snippet>
-  <snippet>
-    <tag>cycle</tag>
+  <snippet id="dcicle">
+    <tag>dcycle</tag>
     <description>cycle</description>
     <text><![CDATA[{% cycle $1 as $2 %}]]></text>
   </snippet>
-  <snippet>
-    <tag>if</tag>
+  <snippet id="dif">
+    <tag>dif</tag>
     <description>if</description>
     <text><![CDATA[{% if $1 %}
 	$2
 {% endif %}]]></text>
   </snippet>
-  <snippet>
-    <tag>block</tag>
+  <snippet id="dblock">
+    <tag>dblock</tag>
     <description>block</description>
     <text><![CDATA[{% block $1 %}
 	$2
 {% endblock %}]]></text>
   </snippet>
-  <snippet>
-    <tag>blocktrans</tag>
+  <snippet id="dblocktrans">
+    <tag>dblocktrans</tag>
     <description>blocktrans</description>
     <text><![CDATA[{% blocktrans ${1:with ${2:var1} as ${3:var2}} %}
 	$4{{ $3 }}
 {% endblocktrans %}]]></text>
   </snippet>
-  <snippet>
-    <tag>url</tag>
+  <snippet id="durl">
+    <tag>durl</tag>
     <description>url</description>
     <text><![CDATA[{% url ${1:package.module.view_fn} ${2:value1,kwarg=value2} %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="firstof">
     <tag>firstof</tag>
     <description>firstof</description>
     <text><![CDATA[{% firstof $1 %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="ssi">
     <tag>ssi</tag>
     <description>ssi</description>
     <text><![CDATA[{% ssi $1 ${2:parsed} %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="withratio">
     <tag>widthratio</tag>
     <description>widthratio</description>
     <text><![CDATA[{% widthratio ${1:this_value} ${2:max_value} ${3:100} %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="autoescape">
     <tag>autoescape</tag>
     <description>autoescape</description>
     <text><![CDATA[{% autoescape ${1:off} %}
 	$2
 {% endautoescape %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="debug">
     <tag>debug</tag>
     <description>debug</description>
     <text><![CDATA[{% debug %}]]></text>
   </snippet>
-  <snippet>
-    <tag></tag>
+  <snippet id="templatetag">
+    <tag>templatetag</tag>
     <description>templatetag: closevariable</description>
     <text><![CDATA[{% templatetag closevariable %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="extends">
     <tag>extends</tag>
     <description>extends</description>
     <text><![CDATA[{% extends "$1" %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="ifnotequal">
     <tag>ifnotequal</tag>
     <description>ifnotequal</description>
     <text><![CDATA[{% ifnotequal $1 $2 %}
 	$3
 {% endifnotequal %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="ifchanged">
     <tag>ifchanged</tag>
     <description>ifchanged</description>
     <text><![CDATA[{% ifchanged %}$1{% endifchanged %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="trans">
     <tag>trans</tag>
     <description>trans</description>
     <text><![CDATA[{% trans "${1:string to translate}" %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="filter">
     <tag>filter</tag>
     <description>filter</description>
     <text><![CDATA[{% filter $1 %}
 	$2
 {% endfilter %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="include">
     <tag>include</tag>
     <description>include</description>
     <text><![CDATA[{% include ${1:"$2"} %}]]></text>
   </snippet>
-  <snippet>
+  <snippet id="ifequal">
     <tag>ifequal</tag>
     <description>ifequal</description>
     <text><![CDATA[{% ifequal $1 $2 %}
 	$3
 {% endifequal %}]]></text>
   </snippet>
-  <snippet>
-    <tag></tag>
+  <snippet id="closecloc">
+    <tag>closeblock</tag>
     <description>templatetag: closeblock</description>
     <text><![CDATA[{% templatetag closeblock %}]]></text>
   </snippet>
-  <snippet>
-    <tag></tag>
+  <snippet id="ovariable">
+    <tag>ovariable</tag>
     <description>templatetag: openvariable</description>
     <text><![CDATA[{% templatetag openvariable %}]]></text>
   </snippet>

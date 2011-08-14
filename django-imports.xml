@@ -1,68 +1,63 @@
 <?xml version='1.0' encoding='utf-8'?>
 <snippets language="python">
   <!-- Models -->
-  <snippet>
+  <snippet id="user">
     <tag>user</tag>
     <description>Authentication</description>
     <text><![CDATA[from django.contrib.auth.models import User]]></text>
   </snippet>
-  <snippet>
+  <snippet id="permission">
     <tag>permission</tag>
     <description>Permissions</description>
     <text><![CDATA[from django.contrib.auth.models import Permission]]></text>
   </snippet>  
-  <snippet>
+  <snippet id="models">
     <tag>models</tag>
     <description>Import Models</description>
     <text><![CDATA[from django.db import models]]></text>
   </snippet>
   
   <!-- Forms -->
-  <snippet>
+  <snippet id="forms">
     <tag>forms</tag>
     <description>Django Forms</description>
     <text><![CDATA[from django import forms]]></text>
   </snippet>  
-  <snippet>
+  <snippet id="modelforms">
     <tag>modelforms</tag>
     <description>Model Forms</description>
     <text><![CDATA[from django.forms import ModelForm]]></text>
   </snippet>
   
   <!-- URLs -->
-  <snippet>
+  <snippet id="reverse">
     <tag>reverse</tag>
     <description>Reverse URL</description>
     <text><![CDATA[from django.core.urlresolvers import reverse]]></text>
   </snippet>
-  <snippet>
+  <snippet id="urlparse">
     <tag>urlparse</tag>
     <description>Reverse URL</description>
     <text><![CDATA[from urlparse import urlparse]]></text>
   </snippet>  
   
   <!-- HTTP -->
-  <snippet>
+  <snippet id="redirect">
     <tag>redirect</tag>
     <description>HTTP Redirect</description>
     <text><![CDATA[from django.http import HttpResponseRedirect]]></text>
   </snippet>    
-  <snippet>
+  <snippet id="http404">
     <tag>http404</tag>
     <description>HTTP Redirect</description>
     <text><![CDATA[from django.http import Http404]]></text>
   </snippet>
-  <snippet>
+  <snippet id="render">
     <tag>render</tag>
     <description>Render</description>
     <text><![CDATA[from django.shortcuts import render]]></text>
   </snippet>
-  <snippet>
-    <tag>http404</tag>
-    <description>HTTP Redirect</description>
-    <text><![CDATA[from django.http import Http404]]></text>
-  </snippet>  
-  <snippet>
+  <snippet id="response">
     <tag>response</tag>
     <description>HTTP Response</description>
     <text><![CDATA[from django.http import HttpResponse]]></text>
